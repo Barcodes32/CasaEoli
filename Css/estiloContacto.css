@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cdffcc;
+    color: #582138;
+    padding-top: 80px; /* evita que el navbar tape el contenido */
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.contact-info h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.contact-details a {
+    color: #582138;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.ubicacion h2,
+.ubicacion p {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+.ubicacion iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border: 7px solid #582138; /* mismo borde que las cartas */
+    display: block;
+    margin: 2rem auto; /* centrado */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding-bottom: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+footer {
+    
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #e3dcc9;
+    color: #582138;
+    font-size: 0.9rem;
+}

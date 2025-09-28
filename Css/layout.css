@@ -1,0 +1,122 @@
+/* NAVBAR FIJO */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between; /* logo a la izquierda, links a la derecha */
+        align-items: center;
+        background-color: #e3dcc9;
+        height: 75px;
+        min-width: 20%;
+        width: 100%; 
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex; 
+        z-index: 9999;   
+    }
+    nav .logo img{
+
+      width: 60px;
+      max-width: 100%;
+      height: auto;
+      margin: 0;    
+      display: block; 
+    }
+
+    .navbar ul{
+        float: right;
+        margin-right: 20px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: row; /* HORIZONTAL por defecto */
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+    .nav-links ul{
+        float: right;
+        margin-right: 20px;
+        
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 0; /* quita margen extra que estaba separando demasiado */
+    }
+
+    .nav-links li a {
+        text-decoration: none;
+        color: #582138;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        display: block;
+    }
+
+    .nav-links li a:hover{
+
+        font-weight: bold;
+        color: #e3dcc9;
+        background: var(--clr);
+        box-shadow: 0 0 10px var(--clr),
+        0 0 30px var(--clr),
+        0 0 60px var(--clr),
+        0 0 100px var(--clr);
+    }
+
+    @media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    p  { font-size: 1rem; }
+}
+h3{
+    color: #582138;
+}
+p {
+    color: #582138;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 200px; /* ajusta según el alto real del nav en modo columna */
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        height: auto; /* deja que crezca según el contenido */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        display: block;
+        width: 100%;
+    }
+}
+
+
